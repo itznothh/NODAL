@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+:root {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--ivory);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-body: 'DM Sans', Inter, system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --ivory: #f4f0e7;
+  --forest: #263f35;
+  --terracotta: #d97757;
+  --sand: #d8b978;
+  --charcoal: #343a40;
+  --sage: #a7b5a0;
+  --ink-strong: #28352e;
+  --ink-soft: #66736b;
+  --line: #dcd8ce;
+  --paper: #fbf9f3;
+  --surface: #fbf9f3;
+  --surface-muted: #f2efe7;
+  --ink: #343a40;
+  --ink-muted: #66736b;
+  --border: #dcd8ce;
+  --border-strong: #bfc7bb;
+  --focus-ring: #526f5c;
+  --radius-control: 4px;
+  --radius-panel: 5px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 3px 12px rgb(38 63 53 / 6%);
+  --shadow-raised: 0 12px 32px rgb(38 63 53 / 12%);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --control-height: 44px;
+  --content-width: 1320px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--space-5); }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--ivory); color: var(--ink); }
+button, input, textarea, select { min-width: 0; font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+a { color: inherit; }
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--focus-ring) 72%, white);
+  outline-offset: 3px;
+}
+input:not([type='checkbox']):not([type='radio']), select, textarea {
+  color: var(--ink-strong);
+  background-color: var(--paper);
+  border-color: var(--border-strong);
+  border-radius: var(--radius-control);
+}
+input::placeholder, textarea::placeholder { color: #898d83; opacity: 1; }
+button, a { -webkit-tap-highlight-color: transparent; }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--forest); }
+::selection { background: #d8b97880; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,57 @@
+.vision {
+  margin: 24px 0;
+  background: #181b22;
+  border: 1px solid #272b35;
+  border-radius: 10px;
+  padding: 16px;
+}
+.vision h2 { margin-top: 0; }
+
+.vision-warning {
+  background: #2a2111;
+  border: 1px solid #f5a524;
+  color: #f5c76b;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.vision-body { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.dropzone {
+  min-height: 240px;
+  border: 2px dashed #3a3f4b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  color: #8b93a1;
+  background: #0f1115;
+}
+.dropzone.dragging { border-color: #3b82f6; background: #121826; }
+.preview { max-width: 100%; max-height: 300px; border-radius: 8px; }
+
+.vision-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.vision-actions button:disabled { opacity: 0.5; cursor: not-allowed; }
+.vision-actions button.secondary { background: #2b3040; }
+
+.spinner-row { display: flex; align-items: center; gap: 10px; color: #8b93a1; font-size: 14px; }
+.spinner {
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid #3a3f4b; border-top-color: #3b82f6;
+  animation: vspin 0.8s linear infinite;
+}
+@keyframes vspin { to { transform: rotate(360deg); } }
+
+.vision-result { margin-top: 8px; }
+.pred { margin-bottom: 10px; }
+.pred-row { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
+.bar { height: 8px; background: #0f1115; border-radius: 999px; overflow: hidden; }
+.bar > div { height: 100%; background: #3b82f6; }
+
+@media (max-width: 800px) {
+  .vision-body { grid-template-columns: 1fr; }
+}

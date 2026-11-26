@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="NODAL">
+  <rect width="48" height="48" rx="8" fill="#F4F0E7"/>
+  <path d="M12 35V13h5l14 14V13h5v22h-5L17 21v14z" fill="#263F35"/>
+  <circle cx="36" cy="12" r="4" fill="#D97757"/>
+</svg>

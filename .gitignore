@@ -1,0 +1,121 @@
+# Python environments, bytecode, test and build caches
+.venv/
+.venv-vision/
+**/.venv/
+**/.venv-vision/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+htmlcov/
+.coverage*
+
+# Node, frontend build outputs, and test coverage
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+
+# Environment files: keep only the safe template in version control
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+.flaskenv
+
+# Local credentials, tokens, secrets, and private keys
+**/*credential*
+**/*credentials*
+**/*token*.json
+**/*secret*.json
+.secrets/
+secrets/
+private/
+*.token
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# MongoDB data, journals, local database files, dumps, and backups
+mongodb/
+mongodb-data/
+mongo-data/
+data/db/
+dump/
+backups/
+**/WiredTiger*
+**/journal/
+**/diagnostic.data/
+mongod.lock
+*.bson
+*.bson.gz
+*.wt
+*.dump
+*.archive
+*.backup
+*.bak
+*.sqlite
+*.sqlite3
+*.db
+
+# User-generated private files and local evidence
+uploads/
+**/uploads/
+evidence/
+**/evidence/
+private_uploads/
+user_uploads/
+.local_evidence/
+storage/private/
+
+# Runtime artifacts, logs, temporary files, and Office lock files
+logs/
+**/logs/
+*.log
+*.pid
+*.tmp
+*.temp
+*.swp
+*.swo
+*.orig
+*.rej
+tmp/
+temp/
+~$*
+
+# Local runtime and editor configuration
+.local/
+*.local
+config.local.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Training inputs and generated model artifacts stay local until provenance is reviewed
+datasets/*
+!datasets/.gitkeep
+ml/classifier.joblib
+ml/vision/artifacts/*
+!ml/vision/artifacts/.gitkeep
+
+# Supplied reference material is not a NODAL deliverable
+/project_report/TruthLens Report.pdf
+
+# Superseded duplicate report; the editable final is NODAL_Project_Report_Editable.docx
+/project_report/NODAL_Project_Report.docx

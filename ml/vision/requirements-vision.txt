@@ -1,0 +1,8 @@
+# Training and local inference for the NODAL civic image prototype.
+# TensorFlow 2.21.0 is the version recorded in the project's vision environment.
+tensorflow==2.21.0
+Pillow>=11.0
+numpy>=2.0
+scikit-learn>=1.6
+matplotlib>=3.9
+pandas>=2.2

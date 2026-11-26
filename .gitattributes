@@ -1,0 +1,8 @@
+# Keep generated/public binary assets out of text-based diff and whitespace checks.
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.joblib binary
